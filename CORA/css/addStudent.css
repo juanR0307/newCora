@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+
+  background-color: #fffada;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.header{
+  grid-column: 3 / span 10;
+  grid-row: 1 / span 2;
+  background-color: #93d3ed;
+  
+}
+.sidebar{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 12;
+  background-color: #ff6600;
+  padding-top: 5px;
+
+}
+
+.container{
+  grid-column:3/ span 10;
+  grid-row: 3 / span 9;
+  background-color: #fff;
+  margin-right: 10px;
+  padding: 15px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.sidebar h2{
+  color: #fffada;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul li a{
+  padding: 15px;
+  margin-left: 20px;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  
+}    
+.sidebar ul li a{
+  color: #fffada;
+  display: block;
+}
+.sidebar ul li a .bi{
+    width: 25px;
+    margin-right: 10px;
+  }
+
+.sidebar ul li:hover{
+  background-color: #fffada;
+  margin-left: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+    
+.sidebar ul li:hover a{
+  color: #ec6f1c;
+  font-weight: bold;
+  
+}
+ul li a.active{
+    color: #ec6f1c;
+    background-color: #fffada;
+    font-weight: bold;
+    border-radius: 10px 0px 0px 10px;
+  } 
+
+.container h2{
+    margin-top: 20px;
+  }
+.container .form-reg{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 10px;
+  }
+  .input-group{
+    grid-column: span 6;
+    margin: 20px;
+  }
+  .input-group label{
+    font-weight: bold;
+    font-size: large;
+  }
+  .input-group input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #ff6600;
+  }
+  .btn-reg{
+    width: 100px;
+    height: 30px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 30px ;
+    color: #fffada;
+    font-size: large;
+    grid-column: 12;
+  }

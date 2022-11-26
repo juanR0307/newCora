@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+  background: burlywood;
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  position: relative;
+  color: #333;
+  font-size: 300%;
+
+}
+body::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255, 0.2);
+  transform: skewX(-40deg);
+  transform-origin: bottom left;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 40px 60px;
+  background: #ec6f1c;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+}
+.form h2 {
+  text-align: center;
+  font-size: 200%;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  background: #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .form img {
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  width: 100px;
+  background: rgba(255,255,255, 0.8);
+  border-radius: 50%;
+} */
+.form .input-group {
+  position: relative;
+}
+.form .input-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.form .input-group i {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 93%;
+  padding: 10px 0;
+}
+
+.form .input-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .3s ease-out;
+}
+
+.form .input-group input:focus + label,
+.form .input-group input:valid + label {
+  transform: translateY(-18px);
+  color: black;
+  font-size: .8rem;
+}
+a:link {
+ color: white;
+}
+a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.submit-btn {
+  background: burlywood;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  display: block;
+  margin: auto;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+.submit-btn:hover {
+  cursor: pointer;
+  color: maroon;
+  background: #fffada;
+}
+.submit-btn:active {
+  transform: translateY(4px);
+}

@@ -1,0 +1,237 @@
+*{
+  text-decoration: none;
+}
+
+body{
+    background-color: #fffada;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+  }
+  
+  .container-q{
+      grid-column: 4 / span 6;
+      background-color: #fff;
+      padding: 10px;
+  }
+  .container-q .instruction{
+      font-weight: lighter;
+      font-size: 2rem;
+  }
+  .container-q p{
+      font-size:1.5rem;
+  }
+  .container-q input[type=submit]{
+      font-size: 1rem;
+      border: none;
+      background-color: #ff6600;
+      color: #fffada;
+      padding: 10px;
+      float: right;
+      margin-right: 10%;
+  }
+  .container-q input[type=submit]:hover{
+      background-color: #fffada;
+      color: #ff6600;
+      font-weight: bold;
+      border: 1px solid #ff6600;
+  
+  }
+  .container-q input[type=checkbox]:before{
+      border: 1px solid #ff6600;
+  }
+  .container-q hr{
+      border: 1px solid #696969;
+  }
+  .container-q .est-grp{
+      display: flex;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      width: 80%;
+  }
+  .container-q .est-grp select{
+      margin-left: auto ;
+      border: 1px solid #ff6600;
+      border-radius: 50%;
+      margin-bottom: 1px;
+      font-weight: bold;
+  }
+  
+  .container-h{
+      grid-column: 1/ span 12;
+      margin: 50px 10px 10px 10px; 
+  }
+  .container-h-grp{
+    display:flex;
+    width: 100%;
+    
+  }
+.grp1{
+  display: flex;
+  float: left;
+}
+.grp2{
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+}
+  .container-h p{
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+  }
+  h2{
+      color: #ff6600;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+  .container-left{
+      grid-column: 1/ span 8;
+      grid-row: 2/ span 10;
+      overflow-y: auto;
+  }
+  .container-right{
+      grid-column: 9/ span 4;
+      grid-row: 2/ span 10;
+      overflow-y: auto;
+  }
+
+  .container-left thead th , h2{
+    position: sticky;
+    top: 0;
+  }
+  .container-right thead th , h2{
+    position: sticky;
+    top: 0;
+  }
+  .tb{
+      width: 100%;
+      margin: 30px auto;
+      border-collapse: collapse;
+   }  
+   
+   .tb th{
+      background-color: #ec6f1c;
+      color: #fff;
+      width: 10%;
+      height: 30px;
+      border: 1px solid #fffada;
+      font-weight: normal;
+      border-bottom: 3px solid #000;
+   }
+   .tb td{
+      justify-content: start;
+      padding: 10px;
+      border-bottom: 1px solid #808080;
+   }  
+   .success{
+      margin: auto;
+      padding: 5px;
+      background-color: #3b9901;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: large;
+      
+    }
+    .success:hover{
+      background-color: green;
+      color: #fffada;
+    }
+  .heading{
+     text-align: center;
+     font-size: 1.5rem;
+     margin-top: 10px;
+     color: #ff6600;
+     font-weight: bold;
+  }
+  .alert{
+    margin: auto;
+    float: center;
+    width: 50%;
+    color: #fff;
+    background-color: #69d823;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 2px;
+    animation: hideAnimation 0s ease-in 2s;
+    animation-fill-mode: forwards;
+  }
+  .alert-danger{
+    margin: auto;
+    float: center;
+    width: 50%;
+    color: #fff;
+    background-color: #fa1717;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 2px;
+    animation: hideAnimation 0s ease-in 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+  .btn-sel{
+    background-color: #93d3ed;
+    border: none;
+    border-radius: 10%;
+
+  }
+  /* .btn-sel:hover{
+    background-color:
+    
+  } */
+  .btn-view{
+    width: fit-content;
+    border: none;
+    border-radius: 30px;
+    background-color: #93d3ed;
+    padding: 10px;
+    color: #ff6600;
+
+   }
+   .btn-view:hover{
+    background-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+   }
+   .cont-top{
+    position: fixed;
+    margin-left: 90%;
+    margin-top: 30px;
+   }
+
+.h-text{
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.x-text{
+  font-size: 2rem;
+  font-weight: bold;
+ }
+ .s-text{
+  font-size: 1rem;
+  font-weight: light;
+ }
+ .searchbox{
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #ff6600;
+  padding-left: 2rem ;
+ }
+ .large{
+  width: 20px;
+  height: 20px;
+ }
